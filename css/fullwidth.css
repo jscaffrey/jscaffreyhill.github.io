@@ -1,0 +1,11 @@
+body{background: ; width: 100%;}
+header {background: ;}
+wrapper {
+width: 900px;
+margin: 0 auto;
+}
+.portrait {
+width: 100%;
+padding-top: 30px;
+background: white;
+}
