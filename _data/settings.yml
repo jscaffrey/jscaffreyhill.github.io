@@ -1,0 +1,21 @@
+
+
+#-------------------------------
+# About Section
+
+
+blurb: >
+  **Julia specializes** in **user-centered** web development and systems analysis.
+  Most of the things she builds are **for library users and staff**.
+  She graduates with her MSLIS from [Simmons College](http://www.simmons.edu/academics/schools/school-of-library-and-information-science) in May.
+
+
+skills:
+- {name: Communication, value: '9'}
+- {name: Project Management, value: '6'}
+- {name: Learning, value: '9'}
+- {name: Teaching, value: '6'}
+- {name: Systems Evaluation, value: '8'}
+- {name: Programming, value: '6'}
+- {name: Visual Design, value: '5'}
+- {name: UX Research, value: '5'}

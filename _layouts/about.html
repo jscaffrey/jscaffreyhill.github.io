@@ -11,9 +11,11 @@
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/css/skeleton.css" type="text/css">
     <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="/css/fullwidth.css" type="text/css">
     <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
-    <link rel="stylesheet" href="/css/fullwidth.css" type="text/css">
     <link rel="alternate" type="application/atom+xml" title="Julia Caffrey" href="/atom.xml">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="twitter:card" content="summary">
@@ -52,7 +54,7 @@
     {% endif %}
     <script>window.initFuncs = [];</script>
   </head>
-  <body{% if page.wide_layout %} class="wide"{% endif %}>
+  <body>
     <!--script>/*
       var s;
       if (document.location.hostname === 'juliacaffrey.com') {
@@ -72,18 +74,42 @@
     */</script>
     <div id="fb-root"></div><script></script-->
     <header>
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/bunbunlogo.png" id="bunbunlogo" width="50" height="50" alt="Logo">Julia Caffrey</a></h1>
+    <div class="container row">
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/bunbunlogo.png" id="bunbunlogo" width="50" height="50" alt="Signature">Julia Caffrey</a></h1>
       <ul class="navigation">
         <li><a href="/blog/">Blog</a></li>
       </ul>
+    </div>
     </header>
-<div class="portrait">
-<img src="res/portrait.jpg" width="50%" align="right" style="position: relative;">
-<h2 style="margin-top: 0;">{{ page.title }}</h2>
-  {{ content }}
-</div>
-{% include autoreload-in-debug.html %}
-    <!--/div-->
+	<div class="container main">
+	<div class="row portrait-row">
+	<img src="res/portrait.jpg" class="portrait five columns" style="">
+	
+  {% if site.data.settings.blurb %}	
+  <div class="blurb seven columns">
+    {{ site.data.settings.blurb | markdownify }}
+  </div>
+  {% endif %}
+	</div><!--row-->
+<!--  	 {{ content }} -->
+	{% include autoreload-in-debug.html %}
+  {% if site.data.settings.skills %}
+  <div class="skill-lockup row">
+
+    {% for skill in site.data.settings.skills %}
+
+      <div class="skill-unit">
+        <div class="skill-label">{{ skill.name }}</div>
+        <div class="skill-icons skill-{{ skill.value }}">
+          {% for i in (1..10) %}
+            <span></span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+	</div><!--container-->
+  {% endif %}
     <footer>
       <p>
         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
@@ -91,6 +117,8 @@
         This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
       </p>
     </footer>
+
+    {% include highlight.html %}
     {% include analytics.html %}
     <script>for (var k in window.initFuncs) { window.initFuncs[k](); } delete window.initFuncs;</script>
   </body>

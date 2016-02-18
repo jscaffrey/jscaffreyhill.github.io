@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: about
 ---
-
-<img src="res/portrait.jpg" width="50%" align="right" style="position: relative;">
-Hi.  I'm Julia Caffrey.  I am a librarian and technologist currently living in the Boston area.
+Hi.  I'm Julia Caffrey.  I am a librarian and technology enthusiast currently living in the Boston area.
 
 I currently work for [Simmons College Library](http://www2.simmons.edu/library/).  I graduate in May with my MLIS from
 [Simmons SLIS](http://www.simmons.edu/academics/schools/school-of-library-and-information-science).
