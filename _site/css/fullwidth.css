@@ -72,17 +72,17 @@ margin-top: 40px;
 .skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
   background: #e5eaee; }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 579px) {
   .skill-lockup {
     width: 220px; }
     .skill-lockup .skill-unit {
       width: 220px; } }
       
-@media (max-width: 890px) and (min-width: 520px) {
- .portrait { padding: 10% 0; border: 5px solid pink; }
+@media (max-width: 890px) and (min-width: 580px) {
+ .portrait { padding: 10% 0;}
   }
-@media (max-width: 519px) and (min-width: 300px) {
- .portrait { float: none; position: relative !important; transform: none; padding: 0!important; max-height: 200px; max-width: 200px; margin: 30px auto 0 auto!important; border: 5px solid pink; }
+@media (max-width: 579px) and (min-width: 300px) {
+ .portrait { float: none; position: relative !important; transform: none; padding: 0!important; max-height: 200px; max-width: 200px; margin: 30px auto 0 auto!important;}
 .blurb {padding-top: 0;
   }
 

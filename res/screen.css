@@ -137,6 +137,7 @@ header {
   }
 
 .logo { font-family: 'Muli', helvetica, sans-serif; text-transform: uppercase; text-decoration: none; line-height: 1.60em; color: #3B5323;}
+
 header h1 a:hover {text-decoration: none !important;}
 #bunbunlogo {padding-right: 20px;}
 /* main */
@@ -604,6 +605,7 @@ footer {
 
 /* iPhone et al */
 @media only screen and (max-device-width: 480px) {
+  .logotext {visibility: none !important;}
   header {
     height: 120px;
     margin:0 1em 0 0.8em;
