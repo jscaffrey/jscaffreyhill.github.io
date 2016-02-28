@@ -139,7 +139,7 @@ header {
 .logo { font-family: 'Muli', helvetica, sans-serif; text-transform: uppercase; text-decoration: none; line-height: 1.60em; color: #3B5323;}
 
 header h1 a:hover {text-decoration: none !important;}
-#bunbunlogo {padding-right: 20px;}
+#bunbunlogo {padding-right: 20px; width: 50px; height: 50px;}
 /* main */
 #main { margin-bottom: 3em; }
 
@@ -592,7 +592,18 @@ footer {
 }*/
 /* device specifics */
 
-/* medium-res devices (e.g. ipad and iphone) */
+@media (max-device-width: 480px){
+	#bunbunlogo {padding: 0 15px 0 10px; position: relative; top: -10px; width: 40px; height: 40px;}
+	.logo {
+		margin: 10px 0; 
+		position: absolute;
+		left: 3px;
+		letter-spacing: -.06em; 
+		line-height: 1em;
+		padding: 10px 0;
+	}
+	header {height: 60px;}
+}
 @media only screen and (max-device-width: 1024px) {
   /* To constrain pre-formatted text to body width */
   body { color:black; }
@@ -603,16 +614,12 @@ footer {
   div.content { font-size:1.2em; }
 }
 
-/* iPhone et al */
-@media only screen and (max-device-width: 480px) {
-  .logotext {visibility: none !important;}
+@media max-device-width: 480px) {
   header {
-    height: 120px;
     margin:0 1em 0 0.8em;
   }
-    header h1 { float:none; }
     header ul.navigation {
-      float:none;
+      float:right;
       padding-left:1em;
       margin-top: 5px;
     }
@@ -670,34 +677,3 @@ footer {
       min-height:300px;
     }
 }
-
-/* medium-res devices (e.g. ipad, but not iphone) */
-/*#sidebar { display:none; }
-@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  body { width:100%; font-family: 'Poly', georgia; }
-}*/
-
-/* devices like laptops and regular computers (including ipad but not
-   iphone) Note that iOS with retina display device calculates with a 1/2
-   resolution due to the concept of "scale", thus an iPhone 4 triggers for
-   480x240px rather than the actual 960x480 pixels. This is a good thing.
-*/
-/*@media only screen and (min-device-width: 480px) {*/
-/*}*/
-
-/* medium-res devices, landscape orientation (e.g. ipad but not iphone) */
-/*@media only screen and (min-device-width: 480px) and (max-device-width: 1024px)
-                     and (orientation:landscape) {
-  header { display:none; }
-  html.ipad #sidebar {
-    display:block;
-    width:240px;
-    height:100%;
-    border:none;
-    background-color:black;
-    position:absolute;
-    right:0;
-    top:0;
-  }
-  html.ipad { zoom:70%; }
-}*/
