@@ -12,10 +12,10 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen, projection" href="/css/skeleton.css" type="text/css">
-    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
-    <link rel="stylesheet" media="screen, projection" href="/css/fullwidth.css" type="text/css">
-    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="dist/css/skeleton.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="dist/css/screen.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="dist/css/fullwidth.css" type="text/css">
+    <link rel="stylesheet" media="print" href="dist/css/print.css" type="text/css">
     <link rel="alternate" type="application/atom+xml" title="Julia Caffrey" href="/atom.xml">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
     <div id="fb-root"></div><script></script-->
     <header>
     <div class="container row">
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/bunbunlogo.png" id="bunbunlogo" width="50" height="50" alt="Signature">Julia Caffrey</a></h1>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/dist/img/bunbunlogo.png" id="bunbunlogo" width="50" height="50" alt="Signature">Julia Caffrey</a></h1>
       <ul class="navigation">
         <li><a href="/blog/">Blog</a></li>
       </ul>
@@ -65,7 +65,7 @@
     </header>
 	<div class="container main">
 	<div class="row portrait-row">
-	<img src="res/portrait.jpg" class="portrait five columns" style="">
+	<img src="dist/img/portrait.jpg" class="portrait five columns" style="">
 	
   	
   <div class="blurb seven columns">
@@ -134,9 +134,7 @@ check();
 
   
   <div class="skill-lockup row">
-
     
-
       <div class="skill-unit">
         <div class="skill-label">Communication</div>
         <div class="skill-icons skill-9">
@@ -164,7 +162,6 @@ check();
         </div>
       </div>
     
-
       <div class="skill-unit">
         <div class="skill-label">Project Management</div>
         <div class="skill-icons skill-6">
@@ -192,7 +189,6 @@ check();
         </div>
       </div>
     
-
       <div class="skill-unit">
         <div class="skill-label">Learning</div>
         <div class="skill-icons skill-9">
@@ -220,7 +216,6 @@ check();
         </div>
       </div>
     
-
       <div class="skill-unit">
         <div class="skill-label">Teaching</div>
         <div class="skill-icons skill-6">
@@ -248,7 +243,6 @@ check();
         </div>
       </div>
     
-
       <div class="skill-unit">
         <div class="skill-label">Systems Evaluation</div>
         <div class="skill-icons skill-8">
@@ -276,7 +270,6 @@ check();
         </div>
       </div>
     
-
       <div class="skill-unit">
         <div class="skill-label">Programming</div>
         <div class="skill-icons skill-6">
@@ -304,7 +297,6 @@ check();
         </div>
       </div>
     
-
       <div class="skill-unit">
         <div class="skill-label">Visual Design</div>
         <div class="skill-icons skill-5">
@@ -332,7 +324,6 @@ check();
         </div>
       </div>
     
-
       <div class="skill-unit">
         <div class="skill-label">UX Research</div>
         <div class="skill-icons skill-5">
@@ -365,26 +356,13 @@ check();
   
     <footer>
       <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
-        <img src="/res/cc-by.png" class="cc"></a>
-        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/dist/img/cc-cc.png" class="cc">
+        <img src="/dist/img/cc-by.png" class="cc"></a>
+        <a alt="powered by Jekyll" href="http://www.jekyllrb.com" class="cc"><img src="/dist/img/jekyll.png" class="cc"></a>
+        <a alt="Github Repo" href="https://github.com/jscaffrey" class="cc"><img src="/dist/img/github.png" class="cc"></a>
       </p>
+      <p style="font-size: .75em;">Design adapted from <a href="http://rsms.me">Rasmus Andersson</a> and <a href="https://github.com/DevTips/Artists-Theme">DevTips</a>.
     </footer>
-
-    <script>
-  var n,i,L,cn,v = document.getElementsByTagName('pre');
-  for (i=0,L=v.length;i<L;++i) {
-    n = v.item(i);
-    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
-      if (cn.className.indexOf("none") !== -1 || cn.className.indexOf("txt") !== -1) {
-        cn.className = 'nohighlight';
-      }
-    }
-  }
-</script>
-<link rel="stylesheet" media="all" href="/res/highlight.css" type="text/css">
-<script src="/res/highlight.js"></script>
-
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-73558203-1']);

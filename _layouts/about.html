@@ -12,10 +12,10 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen, projection" href="/css/skeleton.css" type="text/css">
-    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
-    <link rel="stylesheet" media="screen, projection" href="/css/fullwidth.css" type="text/css">
-    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="dist/css/skeleton.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="dist/css/screen.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="dist/css/fullwidth.css" type="text/css">
+    <link rel="stylesheet" media="print" href="dist/css/print.css" type="text/css">
     <link rel="alternate" type="application/atom+xml" title="Julia Caffrey" href="/atom.xml">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="twitter:card" content="summary">
@@ -75,7 +75,7 @@
     <div id="fb-root"></div><script></script-->
     <header>
     <div class="container row">
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/bunbunlogo.png" id="bunbunlogo" width="50" height="50" alt="Signature">Julia Caffrey</a></h1>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/dist/img/bunbunlogo.png" id="bunbunlogo" width="50" height="50" alt="Signature">Julia Caffrey</a></h1>
       <ul class="navigation">
         <li><a href="/blog/">Blog</a></li>
       </ul>
@@ -83,7 +83,7 @@
     </header>
 	<div class="container main">
 	<div class="row portrait-row">
-	<img src="res/portrait.jpg" class="portrait five columns" style="">
+	<img src="dist/img/portrait.jpg" class="portrait five columns" style="">
 	
   {% if site.data.settings.blurb %}	
   <div class="blurb seven columns">
@@ -95,9 +95,7 @@
 	{% include autoreload-in-debug.html %}
   {% if site.data.settings.skills %}
   <div class="skill-lockup row">
-
     {% for skill in site.data.settings.skills %}
-
       <div class="skill-unit">
         <div class="skill-label">{{ skill.name }}</div>
         <div class="skill-icons skill-{{ skill.value }}">
@@ -112,13 +110,13 @@
   {% endif %}
     <footer>
       <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
-        <img src="/res/cc-by.png" class="cc"></a>
-        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/dist/img/cc-cc.png" class="cc">
+        <img src="/dist/img/cc-by.png" class="cc"></a>
+        <a alt="powered by Jekyll" href="http://www.jekyllrb.com" class="cc"><img src="/dist/img/jekyll.png" class="cc"></a>
+        <a alt="Github Repo" href="https://github.com/jscaffrey" class="cc"><img src="/dist/img/github.png" class="cc"></a>
       </p>
+      <p style="font-size: .75em;">Design adapted from <a href="http://rsms.me">Rasmus Andersson</a> and <a href="https://github.com/DevTips/Artists-Theme">DevTips</a>.
     </footer>
-
-    {% include highlight.html %}
     {% include analytics.html %}
     <script>for (var k in window.initFuncs) { window.initFuncs[k](); } delete window.initFuncs;</script>
   </body>

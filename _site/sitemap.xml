@@ -2,33 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://juliacaffrey.com/</loc>
-    <lastmod>2016-02-28T11:45:07-05:00</lastmod>
+    <lastmod>2016-03-05T15:27:23-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://juliacaffrey.com/about/</loc>
-    <lastmod>2016-02-28T11:45:07-05:00</lastmod>
+    <lastmod>2016-03-05T15:27:23-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://juliacaffrey.com/archive/</loc>
-    <lastmod>2016-02-28T11:45:07-05:00</lastmod>
+    <lastmod>2016-03-05T15:27:23-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://juliacaffrey.com/2015/01/21/competitiveusabilitytesting.html</loc>
-    <lastmod>2015-01-21T00:00:00-05:00</lastmod>
+    <loc>http://juliacaffrey.com/2016/03/01/asiststlouis.html</loc>
+    <lastmod>2016-03-01T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>
    
   <url>
-    <loc>http://juliacaffrey.com/2015/01/09/uxandyou.html</loc>
-    <lastmod>2015-01-09T00:00:00-05:00</lastmod>
+    <loc>http://juliacaffrey.com/2016/01/21/competitiveusabilitytesting.html</loc>
+    <lastmod>2016-01-21T00:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+   </url>
+   
+  <url>
+    <loc>http://juliacaffrey.com/2016/01/09/uxandyou.html</loc>
+    <lastmod>2016-01-09T00:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+   </url>
+   
+  <url>
+    <loc>http://juliacaffrey.com/2013/11/01/realityatthereferencedesk.html</loc>
+    <lastmod>2013-11-01T00:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
    </url>

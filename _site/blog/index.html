@@ -11,8 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
-    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="stylesheet" media="screen, projection" href="/dist/css/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/dist/css/print.css" type="text/css">
     <link rel="alternate" type="application/atom+xml" title="Julia Caffrey" href="/atom.xml">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="twitter:card" content="summary">
@@ -35,7 +35,7 @@
   </head>
   <body>
     <header>
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/bunbunlogo.png" id="bunbunlogo" alt="Signature">Julia Caffrey</a></h1>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/dist/img/bunbunlogo.png" id="bunbunlogo" alt="Signature">Julia Caffrey</a></h1>
       <ul class="navigation">
         <li><a href="/blog/">Blog</a></li>
       </ul>
@@ -44,13 +44,21 @@
       <div class="posts">
   <div class="content full-bleed" id="recent-posts">
   <a
-    href="/2015/01/21/competitiveusabilitytesting.html" class="post-excerpt">
+    href="/2016/03/01/asiststlouis.html" class="post-excerpt photo">
+      <div class="padded-content">
+        <div class="title">ASIS&T Annual</div>
+      
+        <div class="image" style="background-image:url('../dist/img/stlouisarch.jpg')"></div>
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/2016/01/21/competitiveusabilitytesting.html" class="post-excerpt">
       <div class="padded-content">
         <div class="title">Competitive Usability Testing</div>
       
         <!-- <div class="title">Competitive Usability Testing</div> -->
         <info datetime="">
-          Jan 2015
+          Jan 2016
         </info>
         
         <span class="body"><p>How can an <em>awareness of environmental trends</em> in the digital services and tools we offer help or hurt libraries? I discuss the benefits of competitive benchmarks in usability testing and evaluation.</p>
@@ -59,11 +67,33 @@
       <!-- post.photo_url -->
       </div>
     </a><a
-    href="/2015/01/09/uxandyou.html" class="post-excerpt photo">
+    href="/2016/01/09/uxandyou.html" class="post-excerpt">
       <div class="padded-content">
         <div class="title">UX & You</div>
       
-        <div class="image" style="background-image:url('http://www.juliacaffrey.com/images/uxyou.jpg')"></div>
+        <!-- <div class="title">UX & You</div> -->
+        <info datetime="">
+          Jan 2016
+        </info>
+        
+        <span class="body"><p>Notes from NE ASIS&amp;T&rsquo;s Annual Event.</p>
+</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/2013/11/01/realityatthereferencedesk.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">Reality at the Reference Desk</div>
+      
+        <!-- <div class="title">Reality at the Reference Desk</div> -->
+        <info datetime="">
+          Nov 2013
+        </info>
+        
+        <span class="body"><p>What library school doesn&rsquo;t teach you about your first reference shift.</p>
+</span>
+        
       <!-- post.photo_url -->
       </div>
     </a>
@@ -187,10 +217,12 @@ window.initFuncs.push(setup);
     
     <footer>
       <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
-        <img src="/res/cc-by.png" class="cc"></a>
-        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/dist/img/cc-cc.png" class="cc">
+        <img src="/dist/img/cc-by.png" class="cc"></a>
+        <a alt="powered by Jekyll" href="http://www.jekyllrb.com" class="cc"><img src="/dist/img/jekyll.png" class="cc"></a>
+        <a alt="Github Repo" href="https://github.com/jscaffrey" class="cc"><img src="/dist/img/github.png" class="cc"></a>
       </p>
+      <p style="font-size: .75em;">Design adapted from <a href="https://github.com/rsms/rsms.github.com">Rasmus Andersson</a> and <a href="https://github.com/DevTips/Artists-Theme">DevTips</a>.
     </footer>
     
 
