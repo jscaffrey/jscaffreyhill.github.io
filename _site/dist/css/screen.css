@@ -109,13 +109,14 @@ header {
     display:block;
     text-align: left;
     float: right;
-    line-height: 50px;
-    margin-top: 35px;
+    height: 50px;
+    margin-top: 30px;
     font-family: helvetica, sans-serif;
   }
   header ul.navigation li {
     display: inline-block;
     list-style: none;
+    margin: 50% 0;
     margin-left: 1em;
   }
   header ul.navigation li:first-child { margin-left: 0; }
