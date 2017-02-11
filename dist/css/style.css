@@ -609,6 +609,7 @@ footer {
 		letter-spacing: -.06em; 
 		line-height: 1em;
 		padding: 10px 0;
+		font-size: 145%;
 	}
 	header {height: 60px;}
 }
@@ -622,22 +623,26 @@ footer {
   div.content { font-size:1.2em; }
 }
 
-@media max-device-width: 480px) {
+@media (min-width: 0) and (max-width: 480px) {
   header {
     margin:0 1em 0 0.8em;
   }
     header ul.navigation {
       float:right;
       padding-left:1em;
-      margin-top: 5px;
+      margin-top: 10px;
+    height: initial;
     }
+  header ul.navigation li {
+    margin: 20% 0;
+  }
     header ul.navigation > li > a {
       font-size:13px;
       font-family: 'Muli', sans-serif;
       font-weight:400;
     }
   
-  h1,h2 { font-size: 160%; }
+  h1,h2 { font-size: 145%; }
   h3 { font-size: 130%; }
   h4 { font-size: 115%; }
   h5, h6 { font-size: 110%; }
