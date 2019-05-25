@@ -8,13 +8,5 @@
 ehthumbs.db
 Thumbs.db
 
-# Projects and unrelated subdir #
-######################
-addtheproxy/
-admin/
-bunbunlogo-assets/
-jquery/
-linklong/
-recipes/
-rewardme/
-sandbox/
+#Jekyll generated site - not needed
+_site
