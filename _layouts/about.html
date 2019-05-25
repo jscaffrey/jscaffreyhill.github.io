@@ -82,9 +82,9 @@
     </header>
 	<div class="container main">
 	<div class="row portrait-row">
-	<img src="dist/img/portrait.jpg" class="portrait five columns" style="">
-	
-  {% if site.data.settings.blurb %}	
+	<img src="dist/img/portrait.jpg" class="portrait five columns" alt="">
+
+  {% if site.data.settings.blurb %}
   <div class="blurb seven columns">
     {{ site.data.settings.blurb | markdownify }}
   </div>
@@ -109,10 +109,12 @@
   {% endif %}
     <footer>
       <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/dist/img/cc-cc.png" class="cc">
-        <img src="/dist/img/cc-by.png" class="cc"></a>
-        <a alt="powered by Jekyll" href="http://www.jekyllrb.com" class="cc"><img src="/dist/img/jekyll.png" class="cc"></a>
-        <a alt="Github Repo" href="https://github.com/jscaffrey" class="cc"><img src="/dist/img/github.png" class="cc"></a>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc">
+          <img src="/dist/img/cc-cc.png" class="cc" alt="">
+          <img src="/dist/img/cc-by.png" class="cc" alt="Creative Commons License">
+        </a>
+        <a href="http://www.jekyllrb.com" class="cc"><img src="/dist/img/jekyll.png" class="cc" alt="Powered by Jekyll"></a>
+        <a alt="Github Repo" href="https://github.com/jscaffrey" class="cc"><img src="/dist/img/github.png" class="cc" alt="GitHub Profile"></a>
       </p>
       <p style="font-size: .75em;">Design adapted from <a href="http://rsms.me">Rasmus Andersson</a> and <a href="https://github.com/DevTips/Artists-Theme">DevTips</a>.
     </footer>
